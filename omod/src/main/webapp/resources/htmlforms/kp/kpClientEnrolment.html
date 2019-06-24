@@ -117,8 +117,9 @@
             jq("#historicalPhysicalViolence").hide();
             jq("#sexuaViolence").hide();
             jq("#peer_work_name").hide();
-            jq("#year_sarted_sex").hide();
+            jq("#year_started_sex").hide();
             jq("#yearStartedSexWithMen").hide();
+            jq("#yearStartedDrugs").hide();
             jq("#test-type-tr").hide();
             jq("#share-test-tr").hide();
             jq("#tbl-receiving-care").hide();
@@ -345,7 +346,7 @@
 
             <table>
                 <tr>
-                    <td>Have you been contacted by a peer educator or an outreach worker for any health services?</td>
+                    <td>Have you been contacted by a peer educator for prevention services?</td>
                     <td>
                         <obs id="peer-educator" conceptId="165004"
                              answerConceptIds="1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -397,7 +398,7 @@
             <legend>Historical Status</legend>
 
             <table>
-                <tr id="year_sarted_sex">
+                <tr id="year_started_sex">
                     <td>Which year did you start sex work?</td>
                     <td>
                         <obs id="startSex" conceptId="165030"/>
@@ -409,8 +410,8 @@
                         <obs id="sexWithMen" conceptId="165031"/>
                     </td>
                 </tr>
-                <tr>
-                    <td>Which Year Did You Start Using Drugs (Injecting Or Smoking?</td>
+                <tr id="yearStartedDrugs">
+                    <td>Which Year Did You Start Using Drugs (Injecting Or Smoking)?</td>
                     <td>
                         <obs id="usingDrugs" conceptId="165032"/>
 
@@ -457,7 +458,7 @@
 
             <table>
                 <tr>
-                    <td>Would you like to be contacted incase you are due for a clinical appointment?</td>
+                    <td>Would you like to be contacted in case you are due for a clinical appointment?</td>
                     <td>
                         <obs id="contacted-incase-of-appointment" conceptId="165036"
                              answerConceptIds="1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -477,7 +478,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>Treatment Buddy Contact Information</legend>
+            <legend>Buddy Contact Information</legend>
 
             <table>
                 <tr>
