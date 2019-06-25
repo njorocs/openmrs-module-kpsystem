@@ -46,7 +46,7 @@
         }
         function everTestedSelected() {
             var val = jq(this).val();
-            var everTested = getValue('ever-tested .value');
+            var everTested = getValue('ever-tested.value');
             if(val == 1065){
                 jq("#test-type-tr").show();
                 jq("#share-test-tr").show();
@@ -454,63 +454,6 @@
         </fieldset>
 
         <fieldset>
-            <legend>Client Support</legend>
-
-            <table>
-                <tr>
-                    <td>Would you like to be contacted in case you are due for a clinical appointment?</td>
-                    <td>
-                        <obs id="contacted-incase-of-appointment" conceptId="165036"
-                             answerConceptIds="1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                             answerLabels="Yes,No"
-                             style="radio" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>If yes, How would you like to be contacted</td>
-                    <td>
-                        <obs id="cContacted" conceptId="164966"
-                             answerConceptIds="161642,165037,1555,159635"
-                             answerLabels="Treatment supporter,Peer educator,Outreach worker,Phone number"/>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-
-        <fieldset>
-            <legend>Buddy Contact Information</legend>
-
-            <table>
-                <tr>
-                    <td>Treatment supporter Name</td>
-                    <td>
-                        <obs id="fname" conceptId="160638"/>
-                    </td>
-                    <td>Alias Name</td>
-                    <td>
-                        <obs id="alias" conceptId="165038"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mobile Number</td>
-                    <td>
-                        <obs id="mobile" conceptId="160642"/>
-                    </td>
-                    <td> Alternative Mobile Number</td>
-                    <td>
-                        <obs id="alterNumber" conceptId="159635"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Enrolment Notes</td>
-                    <td>
-                        <obs id="enNotes" conceptId="161011" rows="2" cols="80"/>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-
-        <fieldset>
             <table>
                 <tr>
                     <td>
@@ -605,6 +548,62 @@
                     </td>
                 </tr>
 
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Client Support</legend>
+
+            <table>
+                <tr>
+                    <td>Would you like to be contacted in case you are due for a clinical appointment?</td>
+                    <td>
+                        <obs id="contacted-incase-of-appointment" conceptId="165036"
+                             answerConceptIds="1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                             answerLabels="Yes,No"
+                             style="radio" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>If yes, How would you like to be contacted</td>
+                    <td>
+                        <obs id="cContacted" conceptId="164966"
+                             answerConceptIds="161642,165037,1555,159635"
+                             answerLabels="Treatment supporter,Peer educator,Outreach worker,Phone number"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Buddy Contact Information</legend>
+
+            <table>
+                <tr>
+                    <td>Treatment supporter Name</td>
+                    <td>
+                        <obs id="fname" conceptId="160638"/>
+                    </td>
+                    <td>Alias Name</td>
+                    <td>
+                        <obs id="alias" conceptId="165038"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>
+                        <obs id="mobile" conceptId="160642"/>
+                    </td>
+                    <td> Alternative Mobile Number</td>
+                    <td>
+                        <obs id="alterNumber" conceptId="159635"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enrolment Notes</td>
+                    <td>
+                        <obs id="enNotes" conceptId="161011" rows="2" cols="80"/>
+                    </td>
+                </tr>
             </table>
         </fieldset>
 
